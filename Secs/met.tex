@@ -1,0 +1,42 @@
+\chapter{\MakeUppercase{Metodología}}
+\label{ch:e_lento}
+
+
+\subsection{Extracción de características. \\ \\}
+
+Se busca realizar una parametrización y análisis de los datos suministrados por el WCD por medio de un histograma de carga. A continuación se presentan los pasos empleados:
+
+\begin{itemize}
+    \item Extraer los datos crudos del detector y posteriormente ordenarlos.
+     \item Parametrizar los datos para ajustarlo a una distribución probabilística.
+     \item Implementar un histograma de carga, para identificar y separar la componente muónica de la electromagnética y multipartícula.
+     \item Encontrar características según los resultados de las variables de entrada de cada componente.
+ \end{itemize}
+ 
+
+\subsection{Ajuste de características para desarrollar clasificadores supervisados que discriminan entre mounes, EM y multipartícula. \\ \\}
+
+Se va a identificar las características para ajustarlas a diferentes modelos de clasificación y etiquetarlas entre las componentes estudiadas en el proyecto. A continuación se presentan las actividades correspondientes:
+\begin{itemize}
+    \item Definir una función de probabilidad optimizando los valores que ajusten a la curva de la distribución seleccionada.
+    \item A partir de los valores ajustados con la función de densidad de probabilidad (PDF), analizar independientemente cada componente por medio de la distribución extraída del histograma de carga.
+    \item Evaluando las componentes independientes, se etiqueta cada tupla de datos con unos y ceros, mounes y EP respectivamente.
+    \item Para el entrenamiento de los datos con el modelo a emplear, se usan características y etiquetas, de tal manera que se pueda evaluar el comportamiento del clasificador a usar\footcite{perez2005modelos}.
+\end{itemize}
+
+\subsection{Implementación del clasificador no supervisado para discriminar los mounes de bajo momentum.\\ \\}
+
+Se comprueban algoritmos no supervisados de clasificación usando previamente la discriminación de la componente electromagnética de la muónica, para separar ahora entre muón de alto y de bajo momentum ($<$ 1 GeV/c). Este proceso se llevará a cabo después de comparar sus tiempos de vuelo como característica.  \\
+
+
+
+\subsection{Comparación y validación de todos los datos obtenidos a lo largo del proyecto de investigación.\\ \\ }
+
+Esta fase final divide en:
+
+\begin{itemize}
+    \item Comparación de los clasificadores supervisados por métricas de precisión.
+    \item Analizar los datos obtenidos por los clasificadores no-supervisados con métricas de precisión.
+    \item Encontrar y diferenciar el mejor resultado de cada clasificador, optimizando el resultado.
+\end{itemize}
+

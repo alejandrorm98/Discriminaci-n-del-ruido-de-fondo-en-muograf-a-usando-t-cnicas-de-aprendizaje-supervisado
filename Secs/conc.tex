@@ -1,0 +1,31 @@
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+%                             Conclusiones
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+
+\chapter{CONCLUSIONES}
+
+%EL desarrollo de esta trabajo costa de la una construcción de un conjunto de modelos de clasificación de aprendizaje automatizado que proporcionan técnicas para la discriminación de las principales fuentes de ruido de la muografía. 
+
+Los resultados obtenidos con los modelos de mezcla gaussiana (GMM) permitieron parametrizar las componentes que conforman los eventos registrados por el detector de MuTe. El clasificador tuvo una precisión de 100 \% etiquetando los eventos pertenecientes a la componente electromagnética y multi-partícula; en la muónica fue del 98\%.\\
+
+Con los datos del ToF se filtraron las partículas correlacionadas con un ToF < 300ns. El modelo ajustó bien a los datos ya que se presentaba una aglomeración marcada entre 0 y 50 ns. Los eventos multi-partícula no correlacionados presentaron un ToF por encima de 300\,ns.\\
+
+%De 0 a 350 ns con un total de 256 datos, fueron 223 eventos los que se alojaron en el rango de 0 a 76 ns, los demás datos están esparcidos al lo largo de la gráfica, como se ve en la Fig. \ref{diez}. Son estos los eventos los que el modelo entiende del comportamiento de los datos y es gracias a esas características el ajuste de los datos.\\
+    
+%Con las mediciones del ToF, se visualizaron los datos para analizar algún patrón en los eventos.%
+%Los resultados de las mediciones del ToF visualizaron una concentración de muestras alrededor de los 10 ns, donde se pudo inferir algún comportamiento. Bajo las métricos del ToF se ingresan 5883 datos definidos con parámetros iniciales como: el numero de componentes, número de iteraciones, pesos para las componentes y número de iniciaciones. Al parametrizar se ajusta un modelo con datos de salida: varianza, media y pesos de las componentes, el cual permite la segmentación de los eventos correlaciones y no correlacionados.
+
+
+De las mediciones de momentum se buscó encontrar y separar los eventos que son afectados por dispersión múltiple. Se estableció un umbral para discriminar las partículas de baja energía con un momentum menor a 1\,Gev/c. En el proceso de clasificación se indagaron métodos como: \textit{Aglomerative Clustering} \textit{Kmeans}, \textit{PCA} y \textit{ Spectral Clustering}, variando el número de clusters. Encontramos que los mejores resultados están entre 2 y 4 clusters.\\
+
+La aglomeración parcial de los datos en zonas específicas fue clave para que los algoritmos identificaran de acuerdo al número de clusters las clases. Con 3 clusters para \textit{Aglomerative Clustering} se tuvo 5511 (rojo), 8 (azul) y 304 (verde), y con \textit{Kmeans} 5441 (rojo), 6 (azul),  376 (verde). Dejando en ambos casos el grupo de mayor número de datos (cluster rojo) por encima del umbral de momentum.  
+
+
+
+    
+    
+    

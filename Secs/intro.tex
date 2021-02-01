@@ -1,0 +1,43 @@
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+%                              Introducción
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+
+\nnchapter{INTRODUCCIÓN}
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+
+% El flujo de mounes que atraviesan una estructura geológica varía en función longitudinal de la densidad, es decir, a mayor densidad menor flujo \cite{jourde2013effects}. 
+
+La muografía se ha enfocado principalmente en el estudio de volcanes y los  fenómenos relacionados. Proyectos como el telescopio DIAPHANE \footcite{marteau2017diaphane}, ubicado en el volcán La Soufriére, analiza las variaciones del contenido interno de líquido/vapor relacionados con su dinámica  hidrotermal\footcite{gomez2017forward}. Esto es posible teniendo en cuenta que el flujo de muones que atraviesa la estructura volcánica varía dependiendo de la densidad del material: a mayor densidad, el flujo será menor y viceversa.\\
+
+%Se debe agregar que el objetivo principal del monitoreo de volcanes, es detectar movimientos de material en cámaras y ductos magmáticos. Por otra parte, la resolución espacial en las imágenes es importante debido a que la estructura interna de los volcanes es altamente heterogénea \cite{nishiyama2016monte}. Además, es conveniente aplicar restricciones a los modelos de sistemas de ductos magmáticos basadas en datos observacionales.\\
+
+Debido a que el flujo de mounes a ángulos de observación típicos de la muografía es bajo, los niveles de ruido pueden generar una sobre-estimación del flujo penetrante y como consecuencia una sub-estimación en la densidad del objeto estudiado \footcite{kusagaya2015muographic}. Los principales actores del ruido de fondo son los componentes electromagnéticos (electrones, positrones y rayos gama) de las EAS, mounes de bajo momentum ($<$ 1 GeV/c) que desvían su trayectoria inicial por interacción con objetos externos, muones que ingresan desde la parte posterior del detector y eventos combinacionales de múltiple-partícula\footcite{nishiyama2014experimental}.\\
+
+Durante el desarrollo de este proyecto, se propone una solución para la disminución del ruido de fondo en muografía usando técnicas de aprendizaje automatizado de forma sistemática, usando los datos del proyecto MuTe \footcite{pena2019calibration}. Por medio de un algoritmo de clasificación se abordará el problema desde el análisis de los datos, haciendo en primera instancia un clasificador de aprendizaje supervisado para separar la componente electromagnética de la muónica, guiados por las distribuciones obtenidas por el detector Cherenkov de agua de MuTe \footcite{pena2019calibration}. En la segunda parte se  desarrolla un clasificador de aprendizaje no-supervisado, para separar los muones de bajo momentum ($<$ 1 GeV/c) contra los muones que tienen baja probabilidad de desviación.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

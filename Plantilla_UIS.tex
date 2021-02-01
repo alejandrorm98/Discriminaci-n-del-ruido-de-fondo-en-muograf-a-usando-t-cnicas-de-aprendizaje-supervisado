@@ -1,0 +1,100 @@
+  
+  
+  
+  % ------------------------------------------------------------------------
+%
+% -------------------      Plantilla_UIS.tex       -----------------------
+%
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% Versión de plantilla para realización de informes de trabajo de grado
+% construida para uso de la Universidad Industrial de Santander.
+%
+% Reservados todos los derechos
+%
+% Bucaramanga, Colombia
+%
+% Septiembre 17 de 2018
+%
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+%
+% ------------------------------------------------------------------------
+\documentclass[letter,oneside,12pt,spanish]{report}          % Encabezados
+% ------------------------------------------------------------------------
+\usepackage{uislatexstyleICONTEC}                   % Libreria UIS ICONTEC
+% ------------------------------------------------------------------------
+% Ingrese en este punto las librerías específicas de usuario
+% ------------------------------------------------------------------------
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{amssymb}
+\usepackage{subfigure}
+\usepackage{pdfpages}
+\usepackage{algorithmicx}
+\usepackage[Algoritmo, ruled]{algorithm}
+\usepackage{algpseudocode}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+% ------------------------------------------------------------------------
+% Archivo de bibliografía
+% ------------------------------------------------------------------------
+\addbibresource{xbib.bib}
+% ------------------------------------------------------------------------
+\begin{document}       
+% Inicio de documento
+% ------------------------------------------------------------------------
+% Definición silábica de palabras
+% ------------------------------------------------------------------------
+\hyphenation{pro-por-cio-nal di-se-ño}
+% ------------------------------------------------------------------------
+% Elementos previos al contenido del trabajo
+% ------------------------------------------------------------------------
+\input{Secs/Port}   % Portada, contraportada, formato de nota y autorización
+% ------------------------------------------------------------------------
+\clearpage
+\input{Secs/dedA}                                     % Dedicatoria
+\input{Secs/dedD}
+% ------------------------------------------------------------------------
+\clearpage
+\tableofcontents                                      % Tabla de contenido
+% ------------------------------------------------------------------------
+\listoffigures                        
+% Lista de figuras, tablas y anexos
+\listoftables
+% ------------------------------------------------------------------------GLOSARIO
+
+\input{Secs/glos}
+
+% ------------------------------------------------------------------------
+% Contenido del Informe
+% ------------------------------------------------------------------------
+\include{Secs/res}                                               % Resumen
+\include{Secs/abs}                                              % Abstract
+% ------------------------------------------------------------------------
+% Capítulos
+% ------------------------------------------------------------------------
+\input{Secs/intro} % Introducción
+\input{Secs/EstA} % Estado del arte.
+\input{Secs/Mute} % Mute
+%\input{Secs/met} % Metodologia
+\input{Secs/supe} % Clasificación supervisada
+\input{Secs/Nsupe} %  Clasificación no supervisada.
+\input{Secs/conc} % Conclusiones
+% ------------------------------------------------------------------------
+% Bibliografía
+% ------------------------------------------------------------------------
+
+\printbibliography[heading=bibintoc,title={BIBLIOGRAFÍA},omitnumbers=true]
+% ------------------------------------------------------------------------
+% % Anexos
+% % ------------------------------------------------------------------------
+%\input{Secs/anexos} 
+
+% ------------------------------------------------------------------------
+\end{document}                                          % Fin de documento
+% ------------------------------------------------------------------------ 

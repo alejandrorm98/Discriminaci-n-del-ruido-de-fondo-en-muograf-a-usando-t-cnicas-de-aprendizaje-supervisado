@@ -1,0 +1,32 @@
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+%                                Resumen
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+\chapter*{RESUMEN}
+
+\footnotesize{
+\begin{description}
+  \item[TÍTULO:] DISCRIMINACIÓN DEL RUIDO DE FONDO EN MUOGRAFÍA USANDO TÉCNICAS DE APRENDIZAJE AUTOMATIZADO. \astfootnote{Trabajo de grado}
+  \item[AUTOR:] ALEJANDRO RAMIREZ MUÑOZ, DAVID VILLABONA ARDILA \asttfootnote {Faculty of Physical-Mechanical Engineering. School of Systems Engineering and Informatics. Director: Jesús Peña Rodríguez}
+  \item[PALABRAS CLAVE:] Rayos cósmicos, Muografía, Aprendizaje automatizado, ruido de fondo.
+  \item[DESCRIPCIÓN:]\hfill 
+  
+  La muografía es una técnica no-invasiva que se utiliza para escanear grandes estructuras antrópicas o naturales. Su principio de funcionamiento consiste en la medición del flujo de muones que cruzan la estructura en diferentes direcciones. Esta técnica tiene aplicaciones en campos tales como: mediciones subterráneas\footcite{Tanaka2005, Tanaka2009, Lesparre2010, Lesparre2011, Lesparre2012}, arqueología\footcite{Morishima2017, Gmez2016, Alvarez1970}, detección de materiales ocultos en contenedores, reactores  y residuos nucleares \footcite{Fujii2013}.\\
+
+Esta técnica se ve afectada por una subestimación de la densidad del objeto, producto del ruido de fondo (falsos-positivos) que se pueden clasificar en: partículas cargadas procedentes de lluvias aéreas extensas (EAS) \footcite{Nishiyama2014,Gomez2017}, las partículas que inciden desde la parte trasera del detector, los muones de baja energía que son dispersados por la superficie del volcán y eventos de múltiple partícula\footcite{nishiyama2014experimental}.\\
+
+Para la eliminación del ruido se han desarrollado técnicas pasivas como la instalación de paneles absorbentes, para filtrar las partículas de baja energía y el aumento de la cantidad de paneles sensibles, para disminuir la probabilidad de detectar eventos combinacionales \footcite{Lesparre2012}. En la actualidad se plantea la eliminación del ruido de fondo con  sistemas ToF e identificación de partículas \footcite{mounes que impactan en el detector por la parte de posterior.} \footcite{Marteau2014, Cimmino2017}. \\
+
+En este trabajo se desarrolla un clasificador de aprendizaje automatizado que disminuya las principales fuentes de ruido que pueden afectar la muografía, basados en los datos del detector MuTe \footcite{inproceedings}. El proyecto se divide en 2 partes:
+
+\begin{itemize}
+    
+    \item En la primera instancia se desarrolla un clasificador de aprendizaje supervisado para separar la componente electromagnética, muónica y de múltiple partícula.
+    
+    \item En la segunda parte se desarrolla un clasificador de aprendizaje no-supervisado el cual discrimina los muones de bajo momentum ($<$ 1 GeV/c).   
+\end{itemize}
+\end{description}}\normalsize
+% ------------------------------------------------------------------------ 
